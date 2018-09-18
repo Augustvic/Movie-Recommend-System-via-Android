@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg">
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/dl_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/main_layout_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/main_image_account"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="300px"
+                android:background="@drawable/head" />
+
+            <TextView
+                android:id="@+id/main_text_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_image_account"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10px"
+                android:text="Justin Timberlake"
+                android:textColor="@color/white"
+                android:textSize="90px" />
+
+            <RelativeLayout
+                android:id="@+id/main_layout_count"
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_text_account"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20px">
+
+                <TextView
+                    android:id="@+id/main_text_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="70px" />
+
+                <TextView
+                    android:id="@+id/main_text_counttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_text_count"
+                    android:text="watched"
+                    android:textColor="@color/white"
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/main_text_rated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30px"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="70px" />
+
+                <TextView
+                    android:id="@+id/main_text_ratedtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/main_text_rated"
+                    android:text="rated"
+                    android:textColor="@color/white"
+                    android:textSize="50px" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_below="@id/main_layout_count"
+                android:layout_marginTop="50px"
+                android:background="@color/white" />
+
+            <ListView
+                android:id="@+id/main_list_watched"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/line"
+                android:layout_marginTop="10px"></ListView>
+
+        </RelativeLayout>
+
+        <!--后定义侧滑的布局 -->
+        <RelativeLayout
+            android:id="@+id/main_frame"
+            android:layout_width="800px"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="@drawable/main_bg">
+
+            <TextView
+                android:id="@+id/main_frame_text_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MENU"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40px"
+                android:textSize="50px"/>
+
+            <ImageView
+                android:id="@+id/main_frame_image_user"
+                android:layout_width="260px"
+                android:layout_height="260px"
+                android:layout_marginTop="80px"
+                android:layout_marginLeft="40px"
+                android:layout_below="@id/main_frame_text_menu"
+                android:background="@drawable/head" />
+
+            <TextView
+                android:id="@+id/main_frame_text_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:layout_marginLeft="40px"
+                android:layout_below="@id/main_frame_text_menu"
+                android:layout_toRightOf="@id/main_frame_image_user"
+                android:text="Justin Timberlake"
+                android:textSize="60px"
+                android:textColor="@color/white"/>
+
+            <RelativeLayout
+                android:id="@+id/main_frame_layout_count"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_frame_text_user"
+                android:layout_toRightOf="@id/main_frame_image_user"
+                android:layout_marginLeft="40px"
+                android:layout_marginTop="20px">
+
+                <TextView
+                    android:id="@+id/main_frame_text_watched"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/main_frame_text_watchedtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_frame_text_watched"
+                    android:text="watched"
+                    android:textColor="@color/white"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:id="@+id/main_frame_text_rated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30px"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="50px" />
+
+                <TextView
+                    android:id="@+id/main_frame_text_ratedtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/main_frame_text_rated"
+                    android:text="rated"
+                    android:textColor="@color/white"
+                    android:textSize="30px" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/main_frame_list_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/main_frame_layout_count"
+                android:layout_marginTop="100px">
+            </ListView>
+
+            <RelativeLayout
+                android:id="@+id/main_frame_lauout_out"
+                android:layout_width="300px"
+                android:layout_height="100px"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20px">
+
+                <ImageView
+                    android:id="@+id/main_frame_image_out"
+                    android:layout_width="70px"
+                    android:layout_height="70px"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/out"/>
+
+                <Button
+                    android:id="@+id/main_frame_button_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/main_frame_image_out"
+                    android:layout_centerVertical="true"
+                    android:text="sign out"
+                    android:textSize="40px"
+                    android:textAllCaps="false"
+                    android:textColor="@color/gray"
+                    android:background="#00000000"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <android.widget.Toolbar
+        android:id="@+id/tb_bar"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="#00000000" >
+    </android.widget.Toolbar>
+
+</RelativeLayout>

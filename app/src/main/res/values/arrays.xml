@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="algorithm">
+        <item>CUNE_MF</item>
+        <item>CUNE_BPR</item>
+    </string-array>
+</resources>

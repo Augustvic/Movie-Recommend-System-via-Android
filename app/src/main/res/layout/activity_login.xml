@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg">
+
+    <RelativeLayout
+        android:id="@+id/login_layout_login"
+        android:layout_width="700px"
+        android:layout_height="350px"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/input">
+
+        <EditText
+            android:id="@+id/login_edit_account"
+            android:layout_width="500px"
+            android:layout_height="120px"
+            android:gravity="center_vertical"
+            android:hint="user name"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"/>
+
+
+        <EditText
+            android:id="@+id/login_edit_pwd"
+            android:layout_width="500px"
+            android:layout_height="120px"
+            android:layout_below="@+id/login_edit_account"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"/>
+
+        <Button
+            android:id="@+id/login_btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/login_edit_pwd"
+            android:background="@color/lightBlue"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_btn_register"
+        android:layout_width="700px"
+        android:layout_height="110px"
+        android:layout_below="@+id/login_layout_login"
+        android:layout_marginTop="200px"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="@color/deepBlue"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+</RelativeLayout>

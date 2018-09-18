@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/mgrec_bg">
+
+    <Button
+        android:id="@+id/mgbpr_btn_back"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:background="@drawable/back_white" />
+
+    <TextView
+        android:id="@+id/mgbpr_text_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="CUNE_BPR"
+        android:textColor="@color/white"
+        android:textSize="100px" />
+
+    <RelativeLayout
+        android:id="@+id/mgbpr_layout_precision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mgbpr_text_head"
+        android:layout_marginTop="200px"
+        android:layout_marginLeft="120px">
+
+        <TextView
+            android:id="@+id/mgbpr_text_precisiontitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0699"
+            android:textColor="@color/white"
+            android:textSize="70px" />
+
+        <TextView
+            android:id="@+id/mgbpr_text_precisiontext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mgbpr_text_precisiontitle"
+            android:layout_centerHorizontal="true"
+            android:text="Precision"
+            android:textColor="@color/white"
+            android:textSize="40px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mgbpr_layout_recall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mgbpr_layout_precision"
+        android:layout_toRightOf="@id/mgbpr_layout_precision"
+        android:layout_marginLeft="310px">
+
+        <TextView
+            android:id="@+id/mgbpr_text_recalltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0455"
+            android:textColor="@color/white"
+            android:textSize="70px" />
+
+        <TextView
+            android:id="@+id/mgbpr_text_recalltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mgbpr_text_recalltitle"
+            android:layout_centerHorizontal="true"
+            android:text="Recall"
+            android:textColor="@color/white"
+            android:textSize="40px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mgbpr_layout_f1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mgbpr_layout_precision"
+        android:layout_marginTop="150px"
+        android:layout_marginLeft="120px">
+
+        <TextView
+            android:id="@+id/mgbpr_text_f1title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0552"
+            android:textColor="@color/white"
+            android:textSize="70px" />
+
+        <TextView
+            android:id="@+id/mgbpr_text_f1text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mgbpr_text_f1title"
+            android:layout_centerHorizontal="true"
+            android:text="F1"
+            android:textColor="@color/white"
+            android:textSize="40px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mgbpr_layout_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mgbpr_layout_f1"
+        android:layout_toRightOf="@id/mgbpr_layout_f1"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="200px">
+
+        <TextView
+            android:id="@+id/mgbpr_text_maptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0479"
+            android:textColor="@color/white"
+            android:textSize="70px" />
+
+        <TextView
+            android:id="@+id/mgbpr_text_maptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mgbpr_text_maptitle"
+            android:layout_centerHorizontal="true"
+            android:text="MAP"
+            android:textColor="@color/white"
+            android:textSize="40px" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mgbpr_layout_ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10px">
+
+        <TextView
+            android:id="@+id/mgbpr_text_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Collaborative User Network Embedding"
+            android:textColor="@color/white"
+            android:textSize="55px"/>
+
+        <TextView
+            android:id="@+id/mgbpr_text_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/mgbpr_text_title1"
+            android:text="Bayesian Personalized Ranking"
+            android:textColor="@color/white"
+            android:textSize="55px"/>
+
+        <TextView
+            android:id="@+id/mgbpr_text_reference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mgbpr_text_title2"
+            android:text="Reference:"
+            android:textSize="40px"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/mgbpr_text_referencetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mgbpr_text_title2"
+            android:layout_toRightOf="@id/mgbpr_text_reference"
+            android:layout_marginLeft="20px"
+            android:text="Zhang C, Yu L, Wang Y, et al. Collaborative User Network Embedding for Social Recommender Systems[M]// Proceedings of the 2017 SIAM International Conference on Data Mining. 2017."
+            android:textColor="@color/lightBlack"
+            android:textSize="40px" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

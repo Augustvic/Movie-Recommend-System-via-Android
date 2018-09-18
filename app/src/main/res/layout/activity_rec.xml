@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="16dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/rec_bg">
+
+    <Button
+        android:id="@+id/rec_btn_back"
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:background="@drawable/back_white"/>
+
+    <TextView
+        android:id="@+id/rec_text_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="CUNE_MF RECOMMEND"
+        android:textSize="50px"
+        android:textColor="@color/white"/>
+
+    <ListView
+        android:id="@+id/rec_list_mf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/rec_text_head" />
+
+    <ListView
+        android:id="@+id/rec_list_bpr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/rec_text_head"/>
+</RelativeLayout>
